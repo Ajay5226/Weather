@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Glassmorphsim</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search here">
+                <i id="searchBtn" class="material-icons">search</i>
+            </div>
+
+            <div class="weather">
+                <h2 class="city">Place Name</h2>
+            <!--    <h2 class="country">Country Name</h2>
+            --> <div id="temp" class="temp">Temperature</div>
+            <div class="tempminmax">Min: | Max: </div>
+                <img src="" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+                    <div class="humidity">Humidity: </div>
+                        <div class="wind">Wind Speed: </div> 
+                        <div class="feelslike">Sensible: </div>
+                        <div class="sunrise">Sunrise: </div>
+                        <div class="sunset">Sunset: </div>
+
+            </div>        
+        </div>
+
+
+        
+
+    </div>
+    <script src="weather.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"), {
+		max: 15,
+		speed: 400
+        });
+    </script>
+</body>
+</html>
